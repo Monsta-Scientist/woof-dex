@@ -40,36 +40,36 @@ const MENU = [
     'title': 'SWAP',
     'link': 'https://swap.woofsolana.io',
   },
-/*   {
-    'title': 'DASHBOARD',
-    'link': '/',
-  }, */
   {
-    'title': 'LIQUIDITY',
+    'title': 'WEBSITE',
+    'link': 'https://swap.woofsolana.io',
+  },
+  {
+    'title': 'SWAP',
+    'link': 'https://swap.woofsolana.io',
+  },
+  {
+    'title': 'DEX',
+    'link': 'https://dex.woofsolana.io',
+  },
+
+   {
+   'title': 'NFTs',
     'child': [
       {
-        'title': 'Pools',
-        'link': '#',
+        'title': 'WOOF Marketplace',
+        'link': 'https://market.woofsolana.io'
       },
-      {
-        'title': 'Add Liquidity',
-        'link': '#',
+     {
+       'title': 'WOOFers Rarity Playground',
+      'link': 'https://playground.woofsolana.io'
+      },
+     {
+       'title': 'WOOFers Rarity Table',
+      'link': 'https://woofers.woofsolana.io/'
       },
     ]
-  },
-  // {
-  //   'title': 'NFTs',
-  //   'child': [
-  //     {
-  //       'title': 'Browse NFTs',
-  //       'link': 'https://nft.woofsolana.io/marketplace'
-  //     },
-  //     {
-  //       'title': 'Explore Collections',
-  //       'link': 'https://nft.woofsolana.io/collections'
-  //     },
-  //   ]
-  // }  
+   }  
 ]
 
 export default function TopBar() {
@@ -147,7 +147,7 @@ export default function TopBar() {
   <Menu mode="horizontal" defaultSelectedKeys={['Trading']} style={{fontSize: '16px', display: 'flex', justifyContent: 'center',background: 'transparent'}} selectable={false} >
     {MENU.map(item => {
       if (item.child === undefined) {
-        return <Menu.Item key={item.title}><a href={item.link} target={item.link.startsWith('/') ? '_self' : '_blank'} rel="noopener noreferrer">{item.title}</a></Menu.Item>
+        return <Menu.Item key={item.title}><a href={item.link} target={item.link ? '_self' : '_blank'} rel="noopener noreferrer">{item.title}</a></Menu.Item>
       } else {
         return <SubMenu key={item.title} title={item.title}>
           {item.child.map(itemChild => <Menu.Item style={{background: "rgb(35, 35, 35)"}} key={itemChild.title}><a href={itemChild.link} target={itemChild.link.startsWith('/') ? '_self' : '_blank'} rel="noopener noreferrer">{itemChild.title}</a></Menu.Item>)}
@@ -173,9 +173,9 @@ export default function TopBar() {
               <img src={logo2} alt="" style={{opacity: 1, paddingLeft: 10 }}/>
             </LogoWrapper>
           </Col>
-          <Col flex="auto" style={{ textAlign: 'center', background: "transparent"}}>
+{          <Col flex="auto" style={{ textAlign: 'center', background: "transparent"}}>
             {menuDiv}
-          </Col>
+          </Col>}
           <Col flex="none" style={{ paddingRight: 20}}>
             <WalletConnect />
           </Col>
