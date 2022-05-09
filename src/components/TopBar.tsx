@@ -48,11 +48,19 @@ const MENU = [
     'title': 'SWAP',
     'link': 'https://swap.woofsolana.io',
   },
-  {
-    'title': 'DEX',
-    'link': 'https://dex.woofsolana.io',
-  },
-
+/*   {
+    'title': 'LIQUIDITY',
+    'child': [
+      {
+        'title': 'Pools',
+        'link': '#',
+      },
+      {
+        'title': 'Add Liquidity',
+        'link': '#',
+      },
+    ]
+  }, */
    {
    'title': 'NFTs',
     'child': [
@@ -61,12 +69,12 @@ const MENU = [
         'link': 'https://market.woofsolana.io'
       },
      {
-       'title': 'WOOFers Rarity Playground',
+       'title': 'WOOFers Playground',
       'link': 'https://playground.woofsolana.io'
       },
      {
        'title': 'WOOFers Rarity Table',
-      'link': 'https://woofers.woofsolana.io/'
+      'link': 'https://woofers.woofsolana.io'
       },
     ]
    }  
