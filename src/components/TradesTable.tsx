@@ -43,11 +43,11 @@ export default function PublicTrades({ smallScreen }) {
         }}
       >Recent Market trades</Title>
       <SizeTitle>
-        <Col span={8} style={{ textAlign: 'left', paddingRight: 20, color: '#06FCB2', opacity: .6, fontSize: 12 }}>Price ({quoteCurrency}) </Col>
-        <Col span={8} style={{ textAlign: 'right', paddingRight: 20, color: '#06FCB2', opacity: .6, fontSize: 12 }}>
+        <Col span={8} style={{ textAlign: 'left', paddingRight: 20, color: '#FCD34D', opacity: .6, fontSize: 12 }}>Price ({quoteCurrency}) </Col>
+        <Col span={8} style={{ textAlign: 'right', paddingRight: 20, color: '#FCD34D', opacity: .6, fontSize: 12 }}>
           Size ({baseCurrency})
         </Col>
-        <Col span={8} style={{ textAlign: 'right', paddingRight: 20, color: '#06FCB2', opacity: .6, fontSize: 12 }}>
+        <Col span={8} style={{ textAlign: 'right', paddingRight: 20, color: '#FCD34D', opacity: .6, fontSize: 12 }}>
           Time
         </Col>
       </SizeTitle>
@@ -68,7 +68,7 @@ export default function PublicTrades({ smallScreen }) {
               <Col
                 span={8}
                 style={{
-                  color: trade.side === 'buy' ? '#41C77A' : '#F23B69',
+                  color: trade.side === 'buy' ? '#84CC16' : '#EF4444',
                   fontSize: 12,
                 }}
               >

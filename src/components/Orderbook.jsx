@@ -130,7 +130,7 @@ export default function Orderbook({ smallScreen, depth = 7, onPrice, onSize }) {
           span={12}
           style={{
             textAlign: 'right',
-            color: '#06FCB2',
+            color: '#FCD34D',
             opacity: 0.5,
             fontSize: 12,
           }}
@@ -142,7 +142,7 @@ export default function Orderbook({ smallScreen, depth = 7, onPrice, onSize }) {
           style={{
             textAlign: 'right',
             paddingRight: 20,
-            color: '#06FCB2',
+            color: '#FCD34D',
             opacity: 0.5,
             fontSize: 12,
           }}
@@ -169,7 +169,7 @@ export default function Orderbook({ smallScreen, depth = 7, onPrice, onSize }) {
           span={12}
           style={{
             textAlign: 'right',
-            color: '#06FCB2',
+            color: '#FCD34D',
             opacity: 0.5,
             fontSize: 12,
           }}
@@ -181,7 +181,7 @@ export default function Orderbook({ smallScreen, depth = 7, onPrice, onSize }) {
           style={{
             textAlign: 'right',
             paddingRight: 20,
-            color: '#06FCB2',
+            color: '#FCD34D',
             opacity: 0.5,
             fontSize: 12,
           }}
@@ -247,8 +247,8 @@ const OrderbookRow = React.memo(
             data-width={sizePercent + '%'}
             data-bgcolor={
               side === 'buy'
-                ? 'rgba(65, 199, 122, 0.6)'
-                : 'rgba(242, 60, 105, 0.6)'
+                ? 'rgb(132, 204, 22)'
+                : 'rgb(239, 68, 68)'
             }
           />
           <Price onClick={onPriceClick}>{formattedPrice}</Price>
@@ -267,9 +267,9 @@ const MarkPriceComponent = React.memo(
 
     let markPriceColor =
       markPrice > previousMarkPrice
-        ? '#41C77A'
+        ? '#84CC16'
         : markPrice < previousMarkPrice
-        ? '#F23B69'
+        ? '#EF4444'
         : 'white';
 
     let formattedMarkPrice =

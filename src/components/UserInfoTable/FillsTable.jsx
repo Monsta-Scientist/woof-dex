@@ -50,7 +50,7 @@ export default function FillsTable() {
                   key={i}
                   style={{
                     fontSize: 14,
-                    color: '#06FCB2',
+                    color: '#FCD34D',
                     paddingBottom: 16,
                   }}
                 >
@@ -62,7 +62,7 @@ export default function FillsTable() {
                     style={{
                       textAlign: 'right',
                       // color: 'rgba(90, 196, 190, 1)',
-                      color: '#06FCB2',
+                      color: '#FCD34D',
                     }}
                   >
                     {side}
@@ -72,7 +72,7 @@ export default function FillsTable() {
                     style={{
                       textAlign: 'right',
                       // color: 'rgba(90, 196, 190, 1)',
-                      color: '#06FCB2',
+                      color: '#FCD34D',
                     }}
                   >
                     {size}

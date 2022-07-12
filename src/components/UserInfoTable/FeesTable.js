@@ -49,7 +49,7 @@ export default function FeesTable() {
                 key={index}
                 style={{
                   fontSize: 14,
-                  color: '#06FCB2',
+                  color: '#FCD34D',
                   paddingBottom: 16,
                 }}
               >

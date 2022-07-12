@@ -1,8 +1,7 @@
 import { Col, Row, Menu } from 'antd';
 import React, { useEffect, useState } from 'react';
 import { useHistory, useLocation } from 'react-router-dom';
-import logo from '../assets/logo1.svg';
-import logo2 from '../assets/logo.svg';
+import logo2 from '../assets/logo1.svg';
 import styled from 'styled-components';
 import { ENDPOINTS, useConnectionConfig } from '../utils/connection';
 import CustomClusterEndpointDialog from './CustomClusterEndpointDialog';
@@ -31,46 +30,6 @@ const LogoWrapper = styled.div`
   }
 `;
 
-const MENU = [
-   {
-    'title': 'TRADE',
-    'link': 'https://dex.woofsolana.io',
-  },
-  {
-    'title': 'SWAP',
-    'link': 'https://swap.woofsolana.io',
-  },
-  {
-    'title': 'WEBSITE',
-    'link': 'https://swap.woofsolana.io',
-  },
-  {
-    'title': 'SWAP',
-    'link': 'https://swap.woofsolana.io',
-  },
-  {
-    'title': 'DEX',
-    'link': 'https://dex.woofsolana.io',
-  },
-
-   {
-   'title': 'NFTs',
-    'child': [
-      {
-        'title': 'WOOF Marketplace',
-        'link': 'https://market.woofsolana.io'
-      },
-     {
-       'title': 'WOOFers Rarity Playground',
-      'link': 'https://playground.woofsolana.io'
-      },
-     {
-       'title': 'WOOFers Rarity Table',
-      'link': 'https://woofers.woofsolana.io/'
-      },
-    ]
-   }  
-]
 
 export default function TopBar() {
   const {
@@ -145,16 +104,6 @@ export default function TopBar() {
 
   const menuDiv = 
   <Menu mode="horizontal" defaultSelectedKeys={['Trading']} style={{fontSize: '16px', display: 'flex', justifyContent: 'center',background: 'transparent'}} selectable={false} >
-    {MENU.map(item => {
-      if (item.child === undefined) {
-        return <Menu.Item key={item.title}><a href={item.link} target={item.link ? '_self' : '_blank'} rel="noopener noreferrer">{item.title}</a></Menu.Item>
-      } else {
-        return <SubMenu key={item.title} title={item.title}>
-          {item.child.map(itemChild => <Menu.Item style={{background: "rgb(35, 35, 35)"}} key={itemChild.title}><a href={itemChild.link} target={itemChild.link.startsWith('/') ? '_self' : '_blank'} rel="noopener noreferrer">{itemChild.title}</a></Menu.Item>)}
-        </SubMenu>
-      }
-    }
-    )}
     </Menu>
 
   return (
@@ -169,7 +118,7 @@ export default function TopBar() {
         <Row wrap={false} style={{ paddingTop: 4, height: 60 }}>
           <Col flex="none">
             <LogoWrapper onClick={() => history.push(tradePageUrl)} style={{ paddingLeft: 40}}>
-              <img src={logo} alt="" style={{opacity: 1 }}/>
+              
               <img src={logo2} alt="" style={{opacity: 1, paddingLeft: 10 }}/>
             </LogoWrapper>
           </Col>

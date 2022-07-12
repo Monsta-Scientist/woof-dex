@@ -30,14 +30,14 @@ const { Option } = Select;
 const { Title } = Typography;
 
 const ActionButton = styled(Button)`
-  color: #06FCB2;
+  color: #FCD34D;
   background-color: #212734;
   border-width: 0px;
 `;
 
 const ConvertButton = styled(Button)`
-  background: #02bf76;
-  border-color: #02bf76;
+  background: #FDE68A;
+  border-color: #FDE68A;
 `;
 
 export default function ConvertForm() {

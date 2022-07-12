@@ -21,7 +21,7 @@ export default function Index() {
             width: '50%',
             textAlign: 'center',
             border: 'transparent',
-            borderBottom: activeKeyStr === 'orders' ? '2px solid #06FCB2' : '',
+            borderBottom: activeKeyStr === 'orders' ? '2px solid #FCD34D' : '',
             background: 'transparent',
             fontSize: 14,
             fontStyle: 'normal',
@@ -31,7 +31,7 @@ export default function Index() {
               activeKeyStr === 'orders'
                 ? '#F1F1F2'
                 : // : 'rgba(241, 241, 242, 0.5)',
-                  '#06FCB2',
+                  '#FCD34D',
             padding: '12px 0 12px',
             opacity: activeKeyStr === 'orders' ? 1 : 0.8,
           }}
@@ -52,7 +52,7 @@ export default function Index() {
             cursor: 'pointer',
             fontStyle: 'normal',
             fontWeight: 600,
-            color: activeKeyStr === 'fills' ? '#F1F1F2' : '#06FCB2',
+            color: activeKeyStr === 'fills' ? '#F1F1F2' : '#FCD34D',
             padding: '12px 0 12px',
             opacity: activeKeyStr === 'fills' ? 1 : 0.8,
           }}
@@ -74,7 +74,7 @@ export default function Index() {
             cursor: 'pointer',
             fontStyle: 'normal',
             fontWeight: 600,
-            color: activeKeyStr === 'balances' ? '#F1F1F2' : '#06FCB2',
+            color: activeKeyStr === 'balances' ? '#F1F1F2' : '#FCD34D',
             padding: '12px 0 12px',
             opacity: activeKeyStr === 'balances' ? 1 : 0.8,
           }}
@@ -96,7 +96,7 @@ export default function Index() {
               fontStyle: 'normal',
               cursor: 'pointer',
               fontWeight: 600,
-              color: activeKeyStr === 'fees' ? '#F1F1F2' : '#06FCB2',
+              color: activeKeyStr === 'fees' ? '#F1F1F2' : '#FCD34D',
               padding: '12px 0 12px',
               opacity: activeKeyStr === 'fees' ? 1 : 0.8,
             }}
