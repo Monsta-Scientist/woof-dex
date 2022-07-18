@@ -481,6 +481,12 @@ const _MARKETS = [
     programId: new PublicKey('9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin'),
   },
   {
+    name: 'LABS/USDC',
+    deprecated: false,
+    address: new PublicKey('CTJorV5McwNK7WeSCt9GSn3ieh5W2fWEzUTAirbpqDsc'),
+    programId: new PublicKey('9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin'),
+  },
+  {
     name: 'whETH/SOL',
     deprecated: false,
     address: new PublicKey('7gtMZphDnZre32WfedWnDLhYYWJ2av1CCn1RES5g8QUf'),
@@ -951,7 +957,7 @@ export function MarketProvider({ marketAddress, setMarketAddress, children }) {
 
   const [market, setMarket] = useState<Market | null>();
 
-  const [marketName, setMarketName] = useState('WOOF/USDC');
+  const [marketName, setMarketName] = useState('LABS/USDC');
 
   // Replace existing market with a non-deprecated one on first load
   useEffect(() => {
@@ -960,7 +966,7 @@ export function MarketProvider({ marketAddress, setMarketAddress, children }) {
         console.log('Switching markets from deprecated', marketInfo);
         if (DEFAULT_MARKET) {
           setMarketAddress(DEFAULT_MARKET.address.toBase58());
-          // setMarketAddress('CwK9brJ43MR4BJz2dwnDM7EXCNyHhGqCJDrAdsEts8n5');
+          // setMarketAddress('CTJorV5McwNK7WeSCt9GSn3ieh5W2fWEzUTAirbpqDsc');
         }
       }
     }
