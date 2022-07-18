@@ -744,6 +744,12 @@ export const TOKENS: Tokens = {
     mintAddress: '9nEqaUcb16sQ3Tn1psbkWqyhPdLmfHWjKGymREjsAgTE',
     decimals: 6,
   },
+  LABS: {
+    symbol: 'LABS',
+    name: 'LABS',
+    mintAddress: 'LABSfApdYpC5Ek1tQiCFAoQP5K8CvADe2GgdYrA2QHh',
+    decimals: 9,
+  },
   ORCA: {
     symbol: 'ORCA',
     name: 'ORCA',

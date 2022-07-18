@@ -225,13 +225,13 @@ export default function StandaloneBalancesDisplay() {
           on Solana?
         </div>
         <a
-          href={'https://woof.gitbook.io/education/'}
+          href={'https://twitter.com/monstascientist/'}
           target="_blank"
           rel="noopener noreferrer"
           style={{ color : 'rgb(173,175,184)',}}
         >
         <div style={{ paddingTop: 16, fontSize: 12, color: '#FCD34D', opacity: 0.8}}>
-            Learn more about WOOF here.
+            Learn more about MONSTA here.
         </div>
       </a>
       </div>

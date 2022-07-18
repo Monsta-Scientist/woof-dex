@@ -83,7 +83,7 @@ function TradePageInner() {
   });
 
   useEffect(() => {
-    document.title = marketName ? `${marketName} — Woof DEX` : 'Woof DEX';
+    document.title = marketName ? `${marketName} — MONSTA DEX` : 'MONSTA DEX';
   }, [marketName]);
 
   const changeOrderRef = useRef<
