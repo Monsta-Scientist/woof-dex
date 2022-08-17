@@ -289,7 +289,7 @@ export const TOKENS: Tokens = {
     name: 'USDC',
     mintAddress: 'EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v',
     decimals: 6,
-    referrer: 'DjZee1YF4ZUSDuz6YvybfHqxuXu6M4JiTt35HjRjiJG2',
+    referrer: 'BXuFaDDfnGDUEPs7pYnuzeuBmAnaD15DyoKefQYfryjW',
   },
   WUSDC: {
     symbol: 'WUSDC',
